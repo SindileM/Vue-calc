@@ -13,7 +13,11 @@
 </head>
 <body>
     <div id="app">
+        <div></div>
+        <div class="output">
         <h1>{{sum}}</h1>
+    </div>
+    <div class="btn">
         <button v-for="operator of operators" 
         @click = "addToSum(operator)">
         {{operator}}
@@ -21,6 +25,7 @@
     <button @click= "evalSum">=</button>
     <button @click="clearSum">Clear</button>
     </div>
+</div>
 
 </body>
 </html>
